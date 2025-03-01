@@ -1,0 +1,140 @@
+2024-12-04 11:34:25.480  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Starting JcmswebfaceApplication using Java 17.0.8.1 on DESKTOP-0F141VK with PID 10352 (C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface\target\classes started by Pughal in C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface)
+2024-12-04 11:34:25.644  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : The following 1 profile is active: "DEV"
+2024-12-04 11:34:26.215  INFO DESKTOP-0F141VK --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-04 11:34:26.215  INFO DESKTOP-0F141VK --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-04 11:34:35.235  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2024-12-04 11:34:35.303  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-04 11:34:35.305  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-12-04 11:34:35.306  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-12-04 11:34:35.652  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring embedded WebApplicationContext
+2024-12-04 11:34:35.653  INFO DESKTOP-0F141VK --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9435 ms
+2024-12-04 11:34:37.811  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-04 11:34:39.037  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-04 11:34:39.090  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2024-12-04 11:34:39.626  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/jcmswebface'
+2024-12-04 11:34:39.699  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Started JcmswebfaceApplication in 16.153 seconds (JVM running for 42.582)
+2024-12-04 11:34:39.705  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-04 11:34:39.706  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             :                JCMSWEBFACE WEBAPP HAS BEEN STARTED                             
+2024-12-04 11:34:39.706  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-04 11:34:39.706  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Info log
+2024-12-04 11:34:39.706  WARN DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Hey, This is a warning!
+2024-12-04 11:34:39.707 ERROR DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Oops! We have an Error. OK
+2024-12-04 11:34:39.707 FATAL DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Damn! Fatal error. Please fix me.
+2024-12-04 11:35:17.867  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 11:35:17.868  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-12-04 11:35:17.871  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2024-12-04 11:35:56.335  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.j.m.MenubarController                : #######################
+2024-12-04 11:35:56.336  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.j.m.MenubarController                : KINDLY LOGIN TO PROCEEED
+2024-12-04 11:35:56.338  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 1
+2024-12-04 11:36:13.289  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.j.a.AuthenticationService            : logincheck() method has been started
+2024-12-04 11:36:13.368  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-12-04 11:36:16.398  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-12-04 11:36:17.989  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.j.a.AuthenticationService            : logincheck() method has been completed
+2024-12-04 11:36:17.989  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.j.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-12-04 11:36:17.990  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.j.a.AuthenticationController         : USER:(b1) LOGGED IN SUCCESFULLY
+2024-12-04 11:36:17.990  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.j.a.AuthenticationController         : SESSION:(79692F954A360F7DFE5331A03F0AACDB) CREATED.
+2024-12-04 11:36:17.991  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.j.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-12-04 11:36:18.562  INFO DESKTOP-0F141VK --- [nio-8080-exec-3] c.n.j.m.MenubarController                : #######################
+2024-12-04 11:36:18.565  INFO DESKTOP-0F141VK --- [nio-8080-exec-3] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 1000
+2024-12-04 11:36:20.475 ERROR DESKTOP-0F141VK --- [nio-8080-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/jcmswebface] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [select * from sm_rolesrightdetails where roleid=?]; nested exception is java.sql.SQLSyntaxErrorException: Table 'jcms.sm_rolesrightdetails' doesn't exist] with root cause
+java.sql.SQLSyntaxErrorException: Table 'jcms.sm_rolesrightdetails' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:810)
+	at com.niralcenter.jcmswebface.menu.MenubarRepository.loadMenuByrole(MenubarRepository.java:51)
+	at com.niralcenter.jcmswebface.menu.MenubarRepository$$FastClassBySpringCGLIB$$4b6f9b0f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.niralcenter.jcmswebface.menu.MenubarRepository$$EnhancerBySpringCGLIB$$bf68d543.loadMenuByrole(<generated>)
+	at com.niralcenter.jcmswebface.menu.MenubarService.loadMenuByrole(MenubarService.java:23)
+	at com.niralcenter.jcmswebface.menu.MenubarController.loadMenu(MenubarController.java:266)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.niralcenter.jcmswebface.auth.SimpleFilter.doFilter(SimpleFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-12-04 11:37:36.861  INFO DESKTOP-0F141VK --- [nio-8080-exec-8] c.n.j.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-12-04 11:37:36.869  INFO DESKTOP-0F141VK --- [nio-8080-exec-8] c.n.j.a.AuthenticationController         : USER:(b1) LOGGED-OUT SUCCESSFULLY
+2024-12-04 11:37:36.872  INFO DESKTOP-0F141VK --- [nio-8080-exec-8] c.n.j.a.AuthenticationController         : SESSION:(79692F954A360F7DFE5331A03F0AACDB) REMOVED.
+2024-12-04 11:37:36.873  INFO DESKTOP-0F141VK --- [nio-8080-exec-8] c.n.j.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-12-04 11:40:18.082  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-04 11:40:18.113  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-04 11:40:18.113  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-12-04 11:40:18.125  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] o.a.c.c.C.[.[.[/jcmswebface]             : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-04 11:40:18.136  WARN DESKTOP-0F141VK --- [n(16)-127.0.0.1] o.a.c.l.WebappClassLoaderBase            : The web application [jcmswebface] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2024-12-04 11:40:18.139  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-04 11:40:18.142  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2024-12-04 11:40:18.153  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-12-04 11:40:18.219  INFO DESKTOP-0F141VK --- [n(16)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="homeApp"   ng-controller="homeCtrl">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" th:href="@{/css/menu.css}" />
+<link rel="stylesheet" th:href="@{/css/home.css}" />
+<script type="text/javascript" th:src="@{/js/angular.js}"></script>
+<script type="text/javascript" th:src="@{/js/home.js}"></script>
+<script type="text/javascript" th:src="@{/js/menu.js}"></script>
+<style>
+
+
+</style>
+</head>
+<body onload="loadMenuBar();">
+<div class="clsdivbackground" id="iddivbackground">
+	
+	
+		<div class="clscoverone" id="idcoverone">
+			<div class="clsdivlogo" id="iddivlogo">
+			<img class="clsimglogo" src="./css/images/jcmscompanylogo.jpg"/>
+			</div>
+			<div class="clsdivheader" id="iddivheader">
+			
+				<div class="clsdivloggedinfo">
+				Welcome <label th:text="${displayname}" class="clslbldispalyname"/>
+				        <label th:text="${rolename}"    class="clslbldispalyrole"/>
+				        <label th:text="${moduleindex}"   class="clslbldisplaymoduleindex"  id="idlblmoduleindex"/>
+				</div>
+				
+				<div class="clsdivloggedbutton">
+				<a href="/jcmswebface/auth/logout" type="GET">Logout</a>
+				</div>
+			
+			</div>
+			<div class="clsdivnavigation" id="iddivnavigation">
+			
+				<div class="navbar">
+				  <a href="./1000" id="M1000">Home</a>
+				  
+				  <div class="dropdown">
+					<button class="dropbtn" id="M2000">Candidate 
+					</button>
+					<div class="dropdown-content">
+					  <a href="./2100"  id="M2100">Register</a>
+					  <a href="./2200"  id="M2200">Process</a>
+					  <a href="./2300"  id="M2300">Remove</a>
+					</div>
+				  </div> 
+				  
+				  
+				  <div class="dropdown">
+					<button class="dropbtn" id="M3000">Clients 
+					</button>
+					<div class="dropdown-content">
+					  <a href="./3100" id="M3100">Register</a>
+					  <a href="./3200" id="M3200">Process</a>
+					  <a href="./3300" id="M3300">Remove</a>
+					</div>
+				  </div> 
+				  
+				  
+				   <div class="dropdown">
+					<button class="dropbtn" id="M4000">Jobs 
+					</button>
+					<div class="dropdown-content">
+					  <a href="./4100" id="M4100">Register</a>
+					  <a href="./4200" id="M4200">Process</a>
+					  <a href="./4300" id="M4300">Remove</a>
+					</div>
+				  </div>
+				  
+				  
+				  <div class="dropdown">
+					<button class="dropbtn" id="M5000">Dashboard 
+					</button>
+					<div class="dropdown-content">
+					  <a href="./5100" id="M5100">Apply</a>
+					  <a href="./5200" id="M5200">Process</a>
+					  <a href="./5300" id="M5300">Remove</a>
+					</div>
+				  </div> 	
+				  
+				  			  
+				  <div class="dropdown" >
+					<button class="dropbtn" id="M6000">Reports 
+					</button>
+					<div class="dropdown-content">
+					  <a href="./6100" id="M6100">Candidate</a>
+					  <a href="./6200" id="M6200">Clients</a>
+					  <a href="./6300" id="M6300">Jobs</a>
+					  <a href="./6400" id="M6400">Workorder</a>
+					</div>
+				  </div> 
+				  	
+					<div class="dropdown" >
+					<button class="dropbtn" id="M7000">Settings 
+					</button>
+					<div class="dropdown-content">
+					  <a href="./7100" id="M7100">User</a>
+					  <a href="./7200" id="M7200">Role</a>
+					</div>
+				  </div> 
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="clscovertwo" id="idcovertwo">
+			<div class="clsdivleftcontent" id="iddivleftcontent">
+			
+			</div>
+			<div class="clsdivcentercontent" id="iddivcentercontent">
+<!----------------------------------------- Center Content started ------------------------------------------->
+					
+					
+					
+					
+<!------------------------------------------- Center Content finished ------------------------------------------>
+			</div>
+			<div class="clsdivrightcontent" id="iddivrightcontent">
+			
+			</div>
+		</div>
+	
+		<div class="clsdivfooter" id="iddivfooter">
+			<center>Copyrights by   <label th:text="${client}"/></center>
+			<center>Version:   <label th:text="${version}"/></center>
+		</div>
+		
+		
+</div>
+</body>
+</html>

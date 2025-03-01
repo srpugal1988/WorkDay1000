@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="loginApp"   ng-controller="loginCtrl"> 
+<head>
+<link rel="stylesheet" th:href="@{/css/menu.css}" />
+<script type="text/javascript" th:src="@{/js/angular.js}"></script>
+<script type="text/javascript" th:src="@{/js/auth.js}"></script>
+<script type="text/javascript" th:src="@{/js/menu.js}"></script>
+<style>
+.clsdivloginpanel {
+	
+	background-color: white;
+	height: 200px;
+	width: 350px;
+	margin-left: 700px;		
+	margin-top: 100px;	
+}
+</style>
+</head>
+<body>
+<div id="iddivbackground" style="background-color:#504c62;height:100%;width:100%;position: fixed;">
+
+		<div id="iddivloginpanel" class="clsdivloginpanel">
+		     <form id="idloginform" name="nmloginform" th:action = "@{/auth/login}" method ="POST">
+		     
+		     <label>Username</label><br> 
+			 <input type="text"  ng-model="username"  name="username"  placeholder="Enter Username"/><br> 
+			
+			 
+			 <label>Password</label><br> 
+			 <input type="password" ng-model="password" name="password" placeholder="Enter Password"/><br> 
+		     
+			 <input type="button" name="btnsubmit" value="Submit" style="margin-left:200px;"  ng-click="LoginRequestMethod();"/>
+			 <input type="button"  name="btnreset" value="Clear" onclick="loginformreset();"/>
+			 
+		    </form>
+		    <div>    
+			    <span id="idspnmessage" style="color:red;"></span>
+		   </div>
+		</div>
+		
+		<div class="loader" ng-show="isloadiconshow"></div>	
+</div>
+</body>
+</html>

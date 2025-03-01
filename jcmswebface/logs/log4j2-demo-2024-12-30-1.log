@@ -1,0 +1,173 @@
+2024-12-30 17:33:43.428  INFO DESKTOP-0F141VK --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.niralcenter.jcmswebface.JcmswebfaceApplicationTests], using SpringBootContextLoader
+2024-12-30 17:33:43.898  INFO DESKTOP-0F141VK --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.niralcenter.jcmswebface.JcmswebfaceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-30 17:33:43.901  INFO DESKTOP-0F141VK --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.niralcenter.jcmswebface.JcmswebfaceApplicationTests]: JcmswebfaceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 17:33:46.231  INFO DESKTOP-0F141VK --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.niralcenter.jcmswebface.JcmswebfaceApplication for test class com.niralcenter.jcmswebface.JcmswebfaceApplicationTests
+2024-12-30 17:33:47.159  INFO DESKTOP-0F141VK --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-30 17:33:47.913  INFO DESKTOP-0F141VK --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73d69c0f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34237b90, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1d01dfa5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a31c2ee, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d400943, org.springframework.test.context.support.DirtiesContextTestExecutionListener@22101c80, org.springframework.test.context.transaction.TransactionalTestExecutionListener@31ff1390, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@759d81f3, org.springframework.test.context.event.EventPublishingTestExecutionListener@781a9412, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a4c638d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e698c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@aed0151, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@267bbe1a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1f12e153, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@389562d6]
+2024-12-30 17:33:53.003  INFO DESKTOP-0F141VK --- [           main] c.n.j.JcmswebfaceApplicationTests        : Starting JcmswebfaceApplicationTests using Java 17.0.8.1 on DESKTOP-0F141VK with PID 9944 (started by Pughal in C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface)
+2024-12-30 17:33:53.103  INFO DESKTOP-0F141VK --- [           main] c.n.j.JcmswebfaceApplicationTests        : The following 1 profile is active: "DEV"
+2024-12-30 17:34:19.866  INFO DESKTOP-0F141VK --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-30 17:34:22.331  INFO DESKTOP-0F141VK --- [           main] c.n.j.JcmswebfaceApplicationTests        : Started JcmswebfaceApplicationTests in 33.126 seconds (JVM running for 70.306)
+2024-12-30 17:35:24.657  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Starting JcmswebfaceApplication using Java 17.0.8.1 on DESKTOP-0F141VK with PID 4252 (C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface\target\classes started by Pughal in C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface)
+2024-12-30 17:35:24.679  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : The following 1 profile is active: "DEV"
+2024-12-30 17:35:24.839  INFO DESKTOP-0F141VK --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-30 17:35:24.840  INFO DESKTOP-0F141VK --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-30 17:35:27.979  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2024-12-30 17:35:28.002  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-30 17:35:28.003  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-12-30 17:35:28.005  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-12-30 17:35:28.275  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring embedded WebApplicationContext
+2024-12-30 17:35:28.275  INFO DESKTOP-0F141VK --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3432 ms
+2024-12-30 17:35:30.090  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-30 17:35:31.483  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30 17:35:31.559  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2024-12-30 17:35:32.199  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/jcmswebface'
+2024-12-30 17:35:32.230  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Started JcmswebfaceApplication in 8.513 seconds (JVM running for 11.664)
+2024-12-30 17:35:32.237  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 17:35:32.237  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             :                JCMSWEBFACE WEBAPP HAS BEEN STARTED                             
+2024-12-30 17:35:32.237  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 17:35:32.238  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Info log
+2024-12-30 17:35:32.238  WARN DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Hey, This is a warning!
+2024-12-30 17:35:32.239 ERROR DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Oops! We have an Error. OK
+2024-12-30 17:35:32.239 FATAL DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Damn! Fatal error. Please fix me.
+2024-12-30 17:38:37.682  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-30 17:38:37.683  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2024-12-30 17:38:37.699  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 16 ms
+2024-12-30 17:38:50.351  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : #######################
+2024-12-30 17:38:50.360  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : KINDLY LOGIN TO PROCEEED
+2024-12-30 17:38:50.363  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 1
+2024-12-30 17:39:15.909  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.a.AuthenticationService            : logincheck() method has been started
+2024-12-30 17:39:16.008  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-12-30 17:39:23.999  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-12-30 17:39:30.384  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.a.AuthenticationService            : logincheck() method has been completed
+2024-12-30 17:39:30.384  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-12-30 17:39:30.389  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.a.AuthenticationController         : USER:(b1) LOGGED IN SUCCESFULLY
+2024-12-30 17:39:30.389  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.a.AuthenticationController         : SESSION:(6D9821693ED46EC604E7BE98C2967EA9) CREATED.
+2024-12-30 17:39:30.390  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-12-30 17:39:30.653  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.j.m.MenubarController                : #######################
+2024-12-30 17:39:30.661  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 1000
+2024-12-30 17:40:38.935  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.j.m.MenubarController                : #######################
+2024-12-30 17:40:38.936  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 2100
+2024-12-30 17:40:42.465  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.j.m.MenubarController                : #######################
+2024-12-30 17:40:42.465  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 3100
+2024-12-30 17:41:05.979  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.j.m.MenubarController                : #######################
+2024-12-30 17:41:05.980  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 7100
+2024-12-30 17:42:54.493  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.m.MenubarController                : #######################
+2024-12-30 17:42:54.503  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 7200
+2024-12-30 18:01:00.079  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.j.m.MenubarController                : #######################
+2024-12-30 18:01:00.668  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 7100
+2024-12-30 18:02:53.821  INFO DESKTOP-0F141VK --- [nio-8080-exec-3] c.n.j.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-12-30 18:02:53.836  INFO DESKTOP-0F141VK --- [nio-8080-exec-3] c.n.j.a.AuthenticationController         : USER:(b1) LOGGED-OUT SUCCESSFULLY
+2024-12-30 18:02:53.840  INFO DESKTOP-0F141VK --- [nio-8080-exec-3] c.n.j.a.AuthenticationController         : SESSION:(6D9821693ED46EC604E7BE98C2967EA9) REMOVED.
+2024-12-30 18:02:53.840  INFO DESKTOP-0F141VK --- [nio-8080-exec-3] c.n.j.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-12-30 18:02:56.535  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : #######################
+2024-12-30 18:02:56.535  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : KINDLY LOGIN TO PROCEEED
+2024-12-30 18:02:56.536  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 1
+2024-12-30 18:03:04.675  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.j.a.AuthenticationService            : logincheck() method has been started
+2024-12-30 18:03:05.508  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.j.a.AuthenticationService            : logincheck() method has been completed
+2024-12-30 18:03:05.509  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.j.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-12-30 18:03:05.509  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.j.a.AuthenticationController         : USER:(v2) LOGGED IN SUCCESFULLY
+2024-12-30 18:03:05.509  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.j.a.AuthenticationController         : SESSION:(7B93AFDE0400039089F31D26F24C6B40) CREATED.
+2024-12-30 18:03:05.510  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.j.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-12-30 18:03:05.800  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : #######################
+2024-12-30 18:03:05.800  INFO DESKTOP-0F141VK --- [io-8080-exec-10] c.n.j.m.MenubarController                : USER OPENING THE PAGE: 1000
+2024-12-30 18:03:58.472  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.j.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-12-30 18:03:58.478  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.j.a.AuthenticationController         : USER:(v2) LOGGED-OUT SUCCESSFULLY
+2024-12-30 18:03:58.479  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.j.a.AuthenticationController         : SESSION:(7B93AFDE0400039089F31D26F24C6B40) REMOVED.
+2024-12-30 18:03:58.479  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.j.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-12-30 18:13:05.092  INFO DESKTOP-0F141VK --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-12-30 18:13:05.635  INFO DESKTOP-0F141VK --- [       Thread-5] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:05.636  INFO DESKTOP-0F141VK --- [       Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-12-30 18:13:05.739  INFO DESKTOP-0F141VK --- [       Thread-5] o.a.c.c.C.[.[.[/jcmswebface]             : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-30 18:13:05.954  WARN DESKTOP-0F141VK --- [       Thread-5] o.a.c.l.WebappClassLoaderBase            : The web application [jcmswebface] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2024-12-30 18:13:05.975  INFO DESKTOP-0F141VK --- [       Thread-5] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:06.179  INFO DESKTOP-0F141VK --- [       Thread-5] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:06.294  INFO DESKTOP-0F141VK --- [       Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-12-30 18:13:06.412  INFO DESKTOP-0F141VK --- [       Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2024-12-30 18:13:07.889  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Starting JcmswebfaceApplication using Java 17.0.8.1 on DESKTOP-0F141VK with PID 4252 (C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface\target\classes started by Pughal in C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface)
+2024-12-30 18:13:07.890  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : The following 1 profile is active: "DEV"
+2024-12-30 18:13:11.001  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2024-12-30 18:13:11.004  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:11.005  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-12-30 18:13:11.005  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-12-30 18:13:11.130  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring embedded WebApplicationContext
+2024-12-30 18:13:11.130  INFO DESKTOP-0F141VK --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3230 ms
+2024-12-30 18:13:12.375  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-30 18:13:12.776  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30 18:13:12.804  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:13.038  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/jcmswebface'
+2024-12-30 18:13:13.047  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Started JcmswebfaceApplication in 5.996 seconds (JVM running for 2272.481)
+2024-12-30 18:13:13.051  INFO DESKTOP-0F141VK --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-30 18:13:13.052  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 18:13:13.052  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             :                JCMSWEBFACE WEBAPP HAS BEEN STARTED                             
+2024-12-30 18:13:13.052  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 18:13:13.052  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Info log
+2024-12-30 18:13:13.053  WARN DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Hey, This is a warning!
+2024-12-30 18:13:13.054 ERROR DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Oops! We have an Error. OK
+2024-12-30 18:13:13.054 FATAL DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Damn! Fatal error. Please fix me.
+2024-12-30 18:13:27.042  INFO DESKTOP-0F141VK --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 147 class path changes (0 additions, 147 deletions, 0 modifications)
+2024-12-30 18:13:27.087  INFO DESKTOP-0F141VK --- [       Thread-7] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:27.088  INFO DESKTOP-0F141VK --- [       Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-12-30 18:13:27.102  INFO DESKTOP-0F141VK --- [       Thread-7] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:27.109  INFO DESKTOP-0F141VK --- [       Thread-7] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:39.191  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Starting JcmswebfaceApplication using Java 17.0.8.1 on DESKTOP-0F141VK with PID 4252 (C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface\target\classes started by Pughal in C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface)
+2024-12-30 18:13:39.192  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : The following 1 profile is active: "DEV"
+2024-12-30 18:13:40.481  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2024-12-30 18:13:40.483  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:40.483  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-12-30 18:13:40.484  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-12-30 18:13:40.548  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring embedded WebApplicationContext
+2024-12-30 18:13:40.548  INFO DESKTOP-0F141VK --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2024-12-30 18:13:41.028  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-30 18:13:41.211  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30 18:13:41.233  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:41.299  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/jcmswebface'
+2024-12-30 18:13:41.318  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Started JcmswebfaceApplication in 3.169 seconds (JVM running for 2300.752)
+2024-12-30 18:13:41.327  INFO DESKTOP-0F141VK --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-30 18:13:41.330  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 18:13:41.330  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             :                JCMSWEBFACE WEBAPP HAS BEEN STARTED                             
+2024-12-30 18:13:41.330  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 18:13:41.330  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Info log
+2024-12-30 18:13:41.330  WARN DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Hey, This is a warning!
+2024-12-30 18:13:41.331 ERROR DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Oops! We have an Error. OK
+2024-12-30 18:13:41.331 FATAL DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Damn! Fatal error. Please fix me.
+2024-12-30 18:13:42.773  INFO DESKTOP-0F141VK --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2024-12-30 18:13:42.823  INFO DESKTOP-0F141VK --- [      Thread-11] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:42.825  INFO DESKTOP-0F141VK --- [      Thread-11] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-12-30 18:13:42.831  INFO DESKTOP-0F141VK --- [      Thread-11] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:42.833  INFO DESKTOP-0F141VK --- [      Thread-11] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:43.077  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Starting JcmswebfaceApplication using Java 17.0.8.1 on DESKTOP-0F141VK with PID 4252 (C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface\target\classes started by Pughal in C:\Users\Pughal\Documents\workspace-spring-tool-suite-4-4.20.1.RELEASE\jcmswebface)
+2024-12-30 18:13:43.079  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : The following 1 profile is active: "DEV"
+2024-12-30 18:13:43.640  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2024-12-30 18:13:43.642  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:43.643  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2024-12-30 18:13:43.644  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-12-30 18:13:43.726  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.C.[.[.[/jcmswebface]             : Initializing Spring embedded WebApplicationContext
+2024-12-30 18:13:43.726  INFO DESKTOP-0F141VK --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 641 ms
+2024-12-30 18:13:44.176  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-30 18:13:44.342  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30 18:13:44.374  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:13:44.409  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path '/jcmswebface'
+2024-12-30 18:13:44.431  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Started JcmswebfaceApplication in 1.495 seconds (JVM running for 2303.865)
+2024-12-30 18:13:44.438  INFO DESKTOP-0F141VK --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-30 18:13:44.439  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 18:13:44.439  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             :                JCMSWEBFACE WEBAPP HAS BEEN STARTED                             
+2024-12-30 18:13:44.439  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : ===============================================================================
+2024-12-30 18:13:44.440  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Info log
+2024-12-30 18:13:44.440  WARN DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Hey, This is a warning!
+2024-12-30 18:13:44.441 ERROR DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Oops! We have an Error. OK
+2024-12-30 18:13:44.441 FATAL DESKTOP-0F141VK --- [  restartedMain] c.n.j.JcmswebfaceApplication             : Damn! Fatal error. Please fix me.
+2024-12-30 18:35:30.872  INFO DESKTOP-0F141VK --- [n(78)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-30 18:35:31.020  INFO DESKTOP-0F141VK --- [n(78)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:35:31.021  INFO DESKTOP-0F141VK --- [n(78)-127.0.0.1] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2024-12-30 18:35:31.079  INFO DESKTOP-0F141VK --- [n(78)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-30 18:35:31.095  INFO DESKTOP-0F141VK --- [n(78)-127.0.0.1] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
