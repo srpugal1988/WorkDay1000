@@ -13,6 +13,8 @@ import org.springframework.session.config.annotation.web.http.EnableSpringHttpSe
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+
+@EnableSpringHttpSession
 @SpringBootApplication
 public class Jotwebserviceapi1000Application {
 

@@ -20,10 +20,15 @@ public class WebSecurityConfig {
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		
 		http.authorizeHttpRequests(auth -> auth.anyRequest().permitAll());
+		
 		http.csrf().disable();
-	    http.sessionManagement(httpSecuritySessionManagementConfigurer -> 
-	               httpSecuritySessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED));
-	    http.sessionManagement().sessionFixation().migrateSession();
+		
+		http.sessionManagement().sessionFixation().newSession();
+		
+	    /*http.sessionManagement(httpSecuritySessionManagementConfigurer -> 
+	               httpSecuritySessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.NEVER));*/
+	    //http.sessionManagement().sessionFixation().migrateSession();
+		
 	    return http.build();
 	}
 	

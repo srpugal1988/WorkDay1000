@@ -34,8 +34,8 @@ import jakarta.servlet.http.HttpSession;
 
 
 
-@RestController
 //@CrossOrigin(origins = "http://localhost:4200")
+@Controller
 public class MenubarController {
 
 	private static final Logger logger = LogManager.getLogger(MenubarController.class);
@@ -69,6 +69,10 @@ public class MenubarController {
 		boolean loginflag=false;
 		String URL="";
 
+		
+		
+		User userone=(User) httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
+		System.out.println(userone);
 		
 		/*
 		Object user_session = httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
