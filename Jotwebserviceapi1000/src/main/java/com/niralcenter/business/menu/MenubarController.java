@@ -9,8 +9,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -34,8 +32,8 @@ import jakarta.servlet.http.HttpSession;
 
 
 
+@RestController
 //@CrossOrigin(origins = "http://localhost:4200")
-@Controller
 public class MenubarController {
 
 	private static final Logger logger = LogManager.getLogger(MenubarController.class);
@@ -70,10 +68,6 @@ public class MenubarController {
 		String URL="";
 
 		
-		
-		User userone=(User) httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
-		System.out.println(userone);
-		
 		/*
 		Object user_session = httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
 		if (user_session != null) {
@@ -89,7 +83,7 @@ public class MenubarController {
 		}
 		*/
 		
-		
+		/*
 		Object user_session = LoginInfo.user;
 		if (user_session != null) {
 			loginflag=true;
@@ -102,7 +96,7 @@ public class MenubarController {
 			logger.info("KINDLY LOGIN TO PROCEEED");
 			pageindex = 1;
 		}
-		
+		*/
 		
 		
 		logger.info("USER OPENING THE PAGE: " + pageindex);
@@ -111,8 +105,6 @@ public class MenubarController {
 		// 0
 		case 0:
 			mav = new ModelAndView(ModuleDefs.INDEX);
-			mav.addObject("pageindex", pageindex);
-			mav.addObject("moduleindex",0);
 			break;
 
 		// 1

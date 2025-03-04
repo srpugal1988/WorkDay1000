@@ -21,7 +21,9 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niralcenter.business.common.ClientDefs;
 import com.niralcenter.business.common.LoginInfo;
+import com.niralcenter.business.common.ModuleDefs;
 import com.niralcenter.business.common.ServerDefs;
 import com.niralcenter.business.common.Webfaceresponse;
 import com.niralcenter.business.menu.MenubarService;
@@ -61,6 +63,8 @@ public class AuthenticationController {
 
 		//Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		//String currentPrincipalName = authentication.getName();
+		
+		
 		String username=user1.getUsername();
 		String password=user1.getPassword();
 		
@@ -79,7 +83,9 @@ public class AuthenticationController {
 			logger.info("SESSION:(" + httpSession.getId() + ") CREATED.");
 			logger.info(
 					">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-
+			user.setGlobalId(httpSession.getId());
+			
+			
 			loginservice.UserLogForLogin(user);
 
 			LoginInfo.USERNAME=user.getUsername();
@@ -88,6 +94,9 @@ public class AuthenticationController {
 			
 			
 			httpSession.setAttribute(ServerDefs.SESSION_USER_LABEL, user);
+			
+			
+			LoginInfo.USERS_SESSIONS.put(httpSession.getId(),user);
 			
 			
 			webfaceresponse.setCode("100");
@@ -110,15 +119,13 @@ public class AuthenticationController {
 	
 	
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public void proceedLogout(HttpSession  httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws IOException {
+	public void proceedLogout(HttpSession  httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse,@RequestParam("id") String globalId) throws IOException {
 
-		
 		Object user_session = httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
 		User user = (User) user_session;
 		logger.info(user);
-		if(user==null) {
-			user=LoginInfo.user;
-		}
+		
+		user=LoginInfo.USERS_SESSIONS.get(globalId);
 		
 		if (user!=null) {
 			logger.info(
@@ -129,35 +136,36 @@ public class AuthenticationController {
 					"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 			
 			httpSession.removeAttribute(ServerDefs.SESSION_USER_LABEL);
-			
 			httpSession.invalidate();
-			
 			loginservice.UserLogForLogout(user);
 			
 			LoginInfo.USERNAME="";
 			LoginInfo.ROLENAME="";
 			LoginInfo.user=null;
+			
+			LoginInfo.USERS_SESSIONS.remove(user.getId());
+			
 
 		} else {
-			logger.info("USER:() NOT LOGGED IN YET");
-
+			logger.info("USER NOT LOGGED IN YET");
 		}
 
-		httpServletResponse.sendRedirect("http://localhost:4200/jotwebface1000/login");
+		
+		httpServletResponse.sendRedirect(ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN);
 	}
 	
 	
 	
 	@RequestMapping(value = "/checkLoginUser", method = RequestMethod.GET)
 	@ResponseBody
-	public Webfaceresponse fetchUser(HttpSession httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse,@RequestParam("moduleindex") String moduleindex) throws IOException {
+	public Webfaceresponse checkForPageAccess(HttpSession httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse,@RequestParam("moduleindex") String moduleindex,@RequestParam("id") String globalId) throws IOException {
+
+		User user=LoginInfo.USERS_SESSIONS.get(globalId);
 		
-		User user=LoginInfo.user;
 		boolean isLoggedIn=false;
 		boolean isPageAcessEligible=false;
 			
 		if(user!=null) {
-			if (user.getOnline()==1) {
 				
 				isPageAcessEligible=loginservice.checkForPageAccess(user.getRoleid(),Integer.parseInt(moduleindex));
 				
@@ -172,9 +180,6 @@ public class AuthenticationController {
 				
 				isLoggedIn=true;
 	
-			} else {
-				isLoggedIn=false;
-			}
 		}else {
 			isLoggedIn=false;
 		}

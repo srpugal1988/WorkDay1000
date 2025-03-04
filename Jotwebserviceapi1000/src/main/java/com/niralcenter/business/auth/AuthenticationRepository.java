@@ -68,6 +68,7 @@ public class AuthenticationRepository {
 	        	@Override
 	            public User mapRow(ResultSet rs, int rowNum) throws SQLException {
 	        		User user = new User();
+	        		user.setId(rs.getInt("id"));
 	        		user.setUserrefno(rs.getString("userrefno")+"");
 	        		user.setFirstname(rs.getString("firstname"));
 	        		user.setLastname(rs.getString("lastname"));
