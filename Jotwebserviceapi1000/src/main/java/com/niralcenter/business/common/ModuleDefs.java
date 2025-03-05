@@ -18,16 +18,16 @@ public class ModuleDefs {
 
 	//2000
 	public static final String  WORKDAY= "workday";//2000
-	public static final String  WORKDAY_BUSINESS_CREATE= "businessCreate";//2100
-	public static final String  WORKDAY_BUSINESS_READ= "businessRead";//2200
-	public static final String  WORKDAY_BUSINESS_UPDATE= "businessUpdate";//2300
-	public static final String  WORKDAY_BUSINESS_DELETE= "businessDelete";//2400
+	public static final String  WORKDAY_BUSINESS_CREATE= "businessCreatePage";//2100
+	public static final String  WORKDAY_BUSINESS_READ= "businessReadPage";//2200
+	public static final String  WORKDAY_BUSINESS_UPDATE= "businessUpdatePage";//2300
+	public static final String  WORKDAY_BUSINESS_DELETE= "businessDeletePage";//2400
 	
 	
 	//3000
 	public static final String  SETTINGS= "settings";//3000
-	public static final String  SETTINGS_USER="settingsUser";//3100
-	public static final String  SETTINGS_ROLE="settingsRole";//3200
+	public static final String  SETTINGS_USER="settingsUserPage";//3100
+	public static final String  SETTINGS_ROLE="settingsRolePage";//3200
 
 	
 	//20000

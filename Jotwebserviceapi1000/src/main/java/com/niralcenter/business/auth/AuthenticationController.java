@@ -143,7 +143,7 @@ public class AuthenticationController {
 			LoginInfo.ROLENAME="";
 			LoginInfo.user=null;
 			
-			LoginInfo.USERS_SESSIONS.remove(user.getId());
+			LoginInfo.USERS_SESSIONS.remove(globalId);
 			
 
 		} else {
@@ -161,6 +161,8 @@ public class AuthenticationController {
 	public Webfaceresponse checkForPageAccess(HttpSession httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse,@RequestParam("moduleindex") String moduleindex,@RequestParam("id") String globalId) throws IOException {
 
 		User user=LoginInfo.USERS_SESSIONS.get(globalId);
+		
+		
 		
 		boolean isLoggedIn=false;
 		boolean isPageAcessEligible=false;

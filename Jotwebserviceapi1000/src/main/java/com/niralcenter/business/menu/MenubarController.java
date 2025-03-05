@@ -9,9 +9,11 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -32,7 +34,7 @@ import jakarta.servlet.http.HttpSession;
 
 
 
-@RestController
+@Controller
 //@CrossOrigin(origins = "http://localhost:4200")
 public class MenubarController {
 
@@ -68,50 +70,23 @@ public class MenubarController {
 		String URL="";
 
 		
-		/*
-		Object user_session = httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
-		if (user_session != null) {
-			loginflag=true;
-			User user = (User) user_session;
-			displayname = user.getFirstname() + " " + user.getLastname();
-			rolename = user.getRolename();
-			
-		} else {
-			System.out.println("kindly login");
-			logger.info("KINDLY LOGIN TO PROCEEED");
-			pageindex = 1;
-		}
-		*/
-		
-		/*
-		Object user_session = LoginInfo.user;
-		if (user_session != null) {
-			loginflag=true;
-			User user = (User) user_session;
-			displayname = user.getFirstname() + " " + user.getLastname();
-			rolename = user.getRolename();
-			
-		} else {
-			System.out.println("kindly login");
-			logger.info("KINDLY LOGIN TO PROCEEED");
-			pageindex = 1;
-		}
-		*/
-		
-		
 		logger.info("USER OPENING THE PAGE: " + pageindex);
 
+		
+		
 		switch (pageindex) {
+		
+		
 		// 0
 		case 0:
-			mav = new ModelAndView(ModuleDefs.INDEX);
+			URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.INDEX;
 			break;
-
 		// 1
 		case 1:
 			URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN;
 			break;
 
+			
 		// 1000
 		case 1000:
 			URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.HOME;
@@ -137,7 +112,6 @@ public class MenubarController {
 				
 		//3000
 		case 3000:
-			mav = new ModelAndView(ModuleDefs.SETTINGS);
 			 URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.SETTINGS;
 			break;
 		case 3100:
@@ -149,18 +123,13 @@ public class MenubarController {
 
 			
 		default:
-			mav = new ModelAndView(ModuleDefs.DEFAULT);
-			mav.addObject("pageindex", pageindex);
+			URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.DEFAULT;
 			break;
 
 		}
 		
 		
 		if(loginflag) {
-		//mav.addObject("displayname", displayname);
-		//mav.addObject("rolename", "(" + rolename + ")");
-		//mav.addObject("version", ServerDefs.VERSION);
-		//mav.addObject("client", ServerDefs.CLIENT);
 			
 			displayinfo.setDisplayname(displayname);
 			displayinfo.setRolename(rolename);
@@ -169,8 +138,6 @@ public class MenubarController {
 		}
 
 		
-		System.out.println(URL);
-		
 		httpServletResponse.sendRedirect(URL);
 	}
 	
@@ -178,24 +145,12 @@ public class MenubarController {
 	
 	@RequestMapping(value = "/menu", method = RequestMethod.GET)
 	@ResponseBody
-	public ResponseEntity<WSresponse> loadMenu(HttpSession httpSession,HttpServletResponse httpServletResponse) {
+	public ResponseEntity<WSresponse> loadMenu(HttpSession httpSession,HttpServletResponse httpServletResponse,@RequestParam("id") String globalId) {
 		List<Menu> menulist=null;
 		int roleid=0;
-		String URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN;
-		/*
-		Object user_session = httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
-		if (user_session != null) {
-			User user = (User) user_session;
-			roleid=user.getRoleid();
-		}
-		*/
-		
-
-		Object user_session=LoginInfo.user;
-		if (user_session != null) {
-			User user = (User) user_session;
-			roleid=user.getRoleid();
-		}
+	
+		User user=LoginInfo.USERS_SESSIONS.get(globalId);
+		roleid=user.getRoleid();
 		
 		menulist=menubarService.loadMenuByrole(roleid);
 		
