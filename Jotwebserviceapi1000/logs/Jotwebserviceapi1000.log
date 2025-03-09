@@ -70,3 +70,232 @@ This generated password is for development use only. Your security configuration
 2025-03-09T19:03:09.128+05:30  INFO 12980 --- [Jotwebserviceapi1000] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
 2025-03-09T19:03:09.344+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-09T19:03:09.554+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-09 19:17:59.313  INFO DESKTOP-0F141VK --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.niralcenter.business.Jotwebserviceapi1000ApplicationTests]: Jotwebserviceapi1000ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-03-09 19:18:00.565  INFO DESKTOP-0F141VK --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.niralcenter.business.Jotwebserviceapi1000Application for test class com.niralcenter.business.Jotwebserviceapi1000ApplicationTests
+2025-03-09 19:18:01.604  INFO DESKTOP-0F141VK --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-03-09 19:18:04.246  INFO DESKTOP-0F141VK --- [           main] n.b.Jotwebserviceapi1000ApplicationTests : Starting Jotwebserviceapi1000ApplicationTests using Java 17.0.8.1 with PID 9880 (started by Pughal in C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000)
+2025-03-09 19:18:04.253  INFO DESKTOP-0F141VK --- [           main] n.b.Jotwebserviceapi1000ApplicationTests : The following 1 profile is active: "DEV"
+2025-03-09 19:18:13.403  INFO DESKTOP-0F141VK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-03-09 19:18:15.181  INFO DESKTOP-0F141VK --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1308ef19
+2025-03-09 19:18:15.185  INFO DESKTOP-0F141VK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-03-09 19:18:17.959  WARN DESKTOP-0F141VK --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 28023630-0018-42bd-b2f8-6f811427e54c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-09 19:18:18.137  INFO DESKTOP-0F141VK --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-09 19:18:20.921  INFO DESKTOP-0F141VK --- [           main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-09 19:18:24.318  INFO DESKTOP-0F141VK --- [           main] n.b.Jotwebserviceapi1000ApplicationTests : Started Jotwebserviceapi1000ApplicationTests in 22.771 seconds (process running for 31.646)
+2025-03-09 19:18:34.335  INFO DESKTOP-0F141VK --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-03-09 19:18:34.381  INFO DESKTOP-0F141VK --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-03-09 19:19:08.572  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.b.Jotwebserviceapi1000Application    : Starting Jotwebserviceapi1000Application using Java 17.0.8.1 with PID 12712 (C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000\target\classes started by Pughal in C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000)
+2025-03-09 19:19:08.593  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.b.Jotwebserviceapi1000Application    : The following 1 profile is active: "DEV"
+2025-03-09 19:19:08.702  INFO DESKTOP-0F141VK --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-09 19:19:08.702  INFO DESKTOP-0F141VK --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-09 19:19:13.526  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-03-09 19:19:13.556  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-09 19:19:13.562  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-03-09 19:19:13.563  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-09 19:19:13.721  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.c.C.[.[.[/Jotwebserviceapi1000]    : Initializing Spring embedded WebApplicationContext
+2025-03-09 19:19:13.723  INFO DESKTOP-0F141VK --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5018 ms
+2025-03-09 19:19:14.196  INFO DESKTOP-0F141VK --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-03-09 19:19:15.898  INFO DESKTOP-0F141VK --- [  restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c42b937
+2025-03-09 19:19:15.902  INFO DESKTOP-0F141VK --- [  restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-03-09 19:19:20.445  WARN DESKTOP-0F141VK --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e0013cc4-48b2-4322-a177-004b3e45b44c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-09 19:19:20.508  INFO DESKTOP-0F141VK --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-09 19:19:22.197  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-09 19:19:23.827  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-09 19:19:23.947  INFO DESKTOP-0F141VK --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2025-03-09 19:19:25.581  INFO DESKTOP-0F141VK --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/Jotwebserviceapi1000'
+2025-03-09 19:19:25.627  INFO DESKTOP-0F141VK --- [  restartedMain] c.n.b.Jotwebserviceapi1000Application    : Started Jotwebserviceapi1000Application in 17.73 seconds (process running for 20.47)
+2025-03-09 19:19:29.500  INFO DESKTOP-0F141VK --- [on(8)-127.0.0.1] o.a.c.c.C.[.[.[/Jotwebserviceapi1000]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-09 19:19:29.501  INFO DESKTOP-0F141VK --- [on(8)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-03-09 19:19:29.506  INFO DESKTOP-0F141VK --- [on(8)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2025-03-09 19:20:45.581 ERROR DESKTOP-0F141VK --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/Jotwebserviceapi1000] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.niralcenter.business.model.User.getRoleid()" because "user" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.niralcenter.business.model.User.getRoleid()" because "user" is null
+	at com.niralcenter.business.menu.MenubarController.loadMenu(MenubarController.java:156)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.niralcenter.business.auth.SimpleFilter.doFilter(SimpleFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-09 19:21:32.146  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationService            : logincheck() method has been started
+2025-03-09 19:21:33.310  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationService            : logincheck() method has been completed
+2025-03-09 19:21:33.326  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-03-09 19:21:33.328  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : USER:(k1) LOGGED IN SUCCESFULLY
+2025-03-09 19:21:33.328  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : SESSION:(8025e024-6b4d-445e-9dd2-639d31a3a885) CREATED.
+2025-03-09 19:21:33.328  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-03-09 19:21:44.173  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.b.m.MenubarController                : #######################
+2025-03-09 19:21:44.176  INFO DESKTOP-0F141VK --- [nio-8080-exec-9] c.n.b.m.MenubarController                : USER OPENING THE PAGE: 2100
+2025-03-09 19:21:54.345  INFO DESKTOP-0F141VK --- [nio-8080-exec-6] c.n.b.m.MenubarController                : #######################
+2025-03-09 19:21:54.346  INFO DESKTOP-0F141VK --- [nio-8080-exec-6] c.n.b.m.MenubarController                : USER OPENING THE PAGE: 2200
+2025-03-09 19:23:12.320  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-03-09 19:23:12.321  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : USER:(k1) LOGGED-OUT SUCCESSFULLY
+2025-03-09 19:23:12.321  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : SESSION:(8025e024-6b4d-445e-9dd2-639d31a3a885) REMOVED.
+2025-03-09 19:23:12.321  INFO DESKTOP-0F141VK --- [nio-8080-exec-4] c.n.b.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-03-09 19:23:30.351  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.b.a.AuthenticationService            : logincheck() method has been started
+2025-03-09 19:23:30.524  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.b.a.AuthenticationService            : logincheck() method has been completed
+2025-03-09 19:23:30.524  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.b.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-03-09 19:23:30.525  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.b.a.AuthenticationController         : USER:(b1) LOGGED IN SUCCESFULLY
+2025-03-09 19:23:30.525  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.b.a.AuthenticationController         : SESSION:(ffed9335-c1be-46c7-9ece-29291afbad1b) CREATED.
+2025-03-09 19:23:30.525  INFO DESKTOP-0F141VK --- [nio-8080-exec-7] c.n.b.a.AuthenticationController         : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-03-09 19:23:33.256  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.b.m.MenubarController                : #######################
+2025-03-09 19:23:33.257  INFO DESKTOP-0F141VK --- [nio-8080-exec-1] c.n.b.m.MenubarController                : USER OPENING THE PAGE: 2100
+2025-03-09 19:23:39.215  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.b.m.MenubarController                : #######################
+2025-03-09 19:23:39.216  INFO DESKTOP-0F141VK --- [nio-8080-exec-5] c.n.b.m.MenubarController                : USER OPENING THE PAGE: 2200
+2025-03-09 19:24:15.693  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.b.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-03-09 19:24:15.698  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.b.a.AuthenticationController         : USER:(b1) LOGGED-OUT SUCCESSFULLY
+2025-03-09 19:24:15.699  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.b.a.AuthenticationController         : SESSION:(ffed9335-c1be-46c7-9ece-29291afbad1b) REMOVED.
+2025-03-09 19:24:15.699  INFO DESKTOP-0F141VK --- [nio-8080-exec-2] c.n.b.a.AuthenticationController         : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-03-09 19:26:19.451  INFO DESKTOP-0F141VK --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 70 class path changes (0 additions, 70 deletions, 0 modifications)
+2025-03-09 19:26:19.462  INFO DESKTOP-0F141VK --- [       Thread-5] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-09 19:26:19.464  INFO DESKTOP-0F141VK --- [tomcat-shutdown] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-09 19:26:19.620  INFO DESKTOP-0F141VK --- [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-03-09 19:26:19.621  INFO DESKTOP-0F141VK --- [       Thread-5] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-09 19:26:19.685  INFO DESKTOP-0F141VK --- [       Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-03-09 19:26:19.933  INFO DESKTOP-0F141VK --- [       Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-03-09T19:28:38.668+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : Starting Jotwebserviceapi1000ApplicationTests using Java 17.0.8.1 with PID 10960 (started by Pughal in C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000)
+2025-03-09T19:28:38.673+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : The following 1 profile is active: "DEV"
+2025-03-09T19:28:44.330+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-09T19:28:45.457+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2299d903
+2025-03-09T19:28:45.461+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-09T19:28:47.261+05:30  WARN 10960 --- [Jotwebserviceapi1000] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 43c79d35-886c-4b81-8a94-616022853e78
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-09T19:28:47.396+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-09T19:28:48.854+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-09T19:28:51.829+05:30  INFO 10960 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : Started Jotwebserviceapi1000ApplicationTests in 14.213 seconds (process running for 17.797)
+2025-03-09T19:28:59.957+05:30  INFO 10960 --- [Jotwebserviceapi1000] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-09T19:29:00.002+05:30  INFO 10960 --- [Jotwebserviceapi1000] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
