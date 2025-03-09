@@ -1,0 +1,72 @@
+2025-03-09T18:43:32.617+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : Starting Jotwebserviceapi1000ApplicationTests using Java 17.0.8.1 with PID 12564 (started by Pughal in C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000)
+2025-03-09T18:43:32.621+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : The following 1 profile is active: "DEV"
+2025-03-09T18:43:43.144+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-09T18:43:44.231+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dd2b9c1
+2025-03-09T18:43:44.236+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-09T18:43:46.200+05:30  WARN 12564 --- [Jotwebserviceapi1000] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 001dbb0d-286c-4d20-8669-3c516c5a85c0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-09T18:43:46.300+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-09T18:43:49.150+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-09T18:43:53.724+05:30  INFO 12564 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : Started Jotwebserviceapi1000ApplicationTests in 23.343 seconds (process running for 31.221)
+2025-03-09T18:44:08.481+05:30  INFO 12564 --- [Jotwebserviceapi1000] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-09T18:44:08.524+05:30  INFO 12564 --- [Jotwebserviceapi1000] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-09T18:46:12.941+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : Starting Jotwebserviceapi1000ApplicationTests using Java 17.0.8.1 with PID 12764 (started by Pughal in C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000)
+2025-03-09T18:46:12.987+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : The following 1 profile is active: "DEV"
+2025-03-09T18:46:22.625+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-09T18:46:23.907+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2211b44f
+2025-03-09T18:46:23.913+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-09T18:46:26.438+05:30  WARN 12764 --- [Jotwebserviceapi1000] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 41a73383-63c2-4931-9ee2-dd4b791b2fba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-09T18:46:26.510+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-09T18:46:28.566+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-09T18:46:31.188+05:30  INFO 12764 --- [Jotwebserviceapi1000] [main] n.b.Jotwebserviceapi1000ApplicationTests : Started Jotwebserviceapi1000ApplicationTests in 20.545 seconds (process running for 37.52)
+2025-03-09T18:46:41.728+05:30  INFO 12764 --- [Jotwebserviceapi1000] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-09T18:46:41.773+05:30  INFO 12764 --- [Jotwebserviceapi1000] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-09T18:47:24.280+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] c.n.b.Jotwebserviceapi1000Application    : Starting Jotwebserviceapi1000Application using Java 17.0.8.1 with PID 12980 (C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000\target\classes started by Pughal in C:\Users\Pughal\git\WorkDay1000\Jotwebserviceapi1000)
+2025-03-09T18:47:24.287+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] c.n.b.Jotwebserviceapi1000Application    : The following 1 profile is active: "DEV"
+2025-03-09T18:47:24.411+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-09T18:47:24.412+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-09T18:47:28.683+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-09T18:47:28.727+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-09T18:47:28.728+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-09T18:47:29.064+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.a.c.c.C.[.[.[/Jotwebserviceapi1000]    : Initializing Spring embedded WebApplicationContext
+2025-03-09T18:47:29.065+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4651 ms
+2025-03-09T18:47:29.709+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-09T18:47:30.061+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e923074
+2025-03-09T18:47:30.065+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-09T18:47:30.888+05:30  WARN 12980 --- [Jotwebserviceapi1000] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 45bfbb8b-10de-4251-bd14-499acdd5306e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-03-09T18:47:30.939+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-09T18:47:32.212+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-09T18:47:33.103+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-09T18:47:33.439+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/Jotwebserviceapi1000'
+2025-03-09T18:47:33.489+05:30  INFO 12980 --- [Jotwebserviceapi1000] [restartedMain] c.n.b.Jotwebserviceapi1000Application    : Started Jotwebserviceapi1000Application in 10.252 seconds (process running for 13.623)
+2025-03-09T18:47:44.127+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[.[.[/Jotwebserviceapi1000]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-09T18:47:44.128+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-09T18:47:44.134+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-03-09T18:53:06.163+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-1] c.n.b.auth.AuthenticationController      : USER NOT LOGGED IN YET
+2025-03-09T18:53:43.302+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-5] c.n.business.auth.AuthenticationService  : logincheck() method has been started
+2025-03-09T18:53:45.116+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-5] c.n.business.auth.AuthenticationService  : logincheck() method has been completed
+2025-03-09T18:53:45.117+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-5] c.n.b.auth.AuthenticationController      : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-03-09T18:53:45.122+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-5] c.n.b.auth.AuthenticationController      : USER:(k1) LOGGED IN SUCCESFULLY
+2025-03-09T18:53:45.126+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-5] c.n.b.auth.AuthenticationController      : SESSION:(a95657be-9cbc-4de5-99e1-8a2448a867ae) CREATED.
+2025-03-09T18:53:45.127+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-5] c.n.b.auth.AuthenticationController      : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2025-03-09T18:53:54.049+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-8] c.n.business.menu.MenubarController      : #######################
+2025-03-09T18:53:54.051+05:30  INFO 12980 --- [Jotwebserviceapi1000] [http-nio-8080-exec-8] c.n.business.menu.MenubarController      : USER OPENING THE PAGE: 3100
+2025-03-09T19:03:08.724+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(27)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-03-09T19:03:08.855+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(27)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-09T19:03:09.128+05:30  INFO 12980 --- [Jotwebserviceapi1000] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-09T19:03:09.344+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-09T19:03:09.554+05:30  INFO 12980 --- [Jotwebserviceapi1000] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
