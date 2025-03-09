@@ -123,7 +123,6 @@ public class AuthenticationController {
 
 		Object user_session = httpSession.getAttribute(ServerDefs.SESSION_USER_LABEL);
 		User user = (User) user_session;
-		logger.info(user);
 		
 		user=LoginInfo.USERS_SESSIONS.get(globalId);
 		
@@ -131,7 +130,7 @@ public class AuthenticationController {
 			logger.info(
 					"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 			logger.info("USER:(" + user.getUsername() + ") LOGGED-OUT SUCCESSFULLY");
-			logger.info("SESSION:(" + httpSession.getId() + ") REMOVED.");
+			logger.info("SESSION:(" + globalId + ") REMOVED.");
 			logger.info(
 					"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 			

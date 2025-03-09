@@ -12,8 +12,8 @@
         </Console>
 
         <!-- Rolling File Appender -->
-        <RollingFile name="FileAppender" fileName="logs/jotwebserviceapi1000.log"
-                     filePattern="logs/log4j2-demo-%d{yyyy-MM-dd}-%i.log">
+        <RollingFile name="FileAppender" fileName="logs/Jotwebserviceapi1000.log"
+                     filePattern="logs/Jotwebserviceapi1000-%d{yyyy-MM-dd}-%i.log">
             <PatternLayout>
                 <Pattern>${LOG_PATTERN}</Pattern>
             </PatternLayout>
@@ -43,7 +43,7 @@
     </Appenders>
 
     <Loggers>
-        <AsyncLogger name="com.niralcenter.jcmswebface" level="debug"
+        <AsyncLogger name="com.niralcenter.business" level="debug"
                      additivity="false">
             <AppenderRef ref="ConsoleAppender" />
             <AppenderRef ref="FileAppender" />

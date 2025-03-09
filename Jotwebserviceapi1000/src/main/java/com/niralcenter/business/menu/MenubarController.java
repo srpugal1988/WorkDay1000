@@ -51,12 +51,18 @@ public class MenubarController {
 	
     //
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public void gotoIndexPage(HttpSession httpSession,HttpServletResponse httpServletResponse) throws IOException {
+	@ResponseBody
+	public WSresponse gotoIndexPage(HttpSession httpSession,HttpServletResponse httpServletResponse) throws IOException {
 
 		System.out.println(">>>>>>>>>>>");
-		String URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN;
+		/*String URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN;
 		httpServletResponse.sendRedirect(URL);
+		*/
+		wsresponse.setCode(100);
+		wsresponse.setMessage("Jobwebserviceapi1000 running sucessfully");
+		wsresponse.setPocket("");
 		
+		return wsresponse;
 	}
 
 	@RequestMapping(value = "/{pageindex}", method = RequestMethod.GET)
@@ -71,16 +77,13 @@ public class MenubarController {
 
 		
 		logger.info("USER OPENING THE PAGE: " + pageindex);
+		
 
 		
 		
 		switch (pageindex) {
 		
-		
-		// 0
-		case 0:
-			URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.INDEX;
-			break;
+
 		// 1
 		case 1:
 			URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN;

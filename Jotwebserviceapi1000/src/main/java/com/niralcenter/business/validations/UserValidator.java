@@ -34,9 +34,9 @@ public class UserValidator  implements Validator {
 		User u = (User) target;
 		
         if (commonService.checkUsernameAlreadyFoundInDb(u.getUsername())) {
-        	errors.rejectValue("username", env.getProperty("jcmswebface.error.user.dublicateusername"));
+        	errors.rejectValue("username", env.getProperty("error.user.dublicateusername"));
         } else if (u.getPassword().equals("oldpassword")) {
-        	errors.rejectValue("password", env.getProperty("jcmswebface.error.user.invalidpassword"));
+        	errors.rejectValue("password", env.getProperty("error.user.invalidpassword"));
         }
 		
 	}
