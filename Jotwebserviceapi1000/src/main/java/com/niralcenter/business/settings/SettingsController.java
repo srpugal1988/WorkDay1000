@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.niralcenter.business.common.Webfaceresponse;
 import com.niralcenter.business.model.Role;
 import com.niralcenter.business.model.RoleRightsDetails;
 import com.niralcenter.business.model.User;
+import com.niralcenter.business.model.WSresponse;
 import com.niralcenter.business.validations.UserValidator;
 
 
@@ -27,7 +27,7 @@ public class SettingsController {
 
 	
 	@Autowired
-    Webfaceresponse webfaceresponse;
+	WSresponse webfaceresponse;
 	
 	
 	@Autowired
@@ -44,7 +44,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/user/store",method=RequestMethod.POST)
 	@ResponseBody
-	public Webfaceresponse storeUserInformation(@RequestBody com.niralcenter.business.model.User User) {
+	public WSresponse storeUserInformation(@RequestBody com.niralcenter.business.model.User User) {
 		System.out.println("user.getUsername"+User.getUsername());
 		Map<String,Object> retMap=new HashMap<String,Object>();
 		
@@ -69,7 +69,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/user/fetchall",method=RequestMethod.GET)
 	@ResponseBody
-	public Webfaceresponse fetchAllUserInformation() {
+	public WSresponse fetchAllUserInformation() {
 		
 		List<User> userlist=userservice.fetchAllUserInformation();
 		
@@ -86,7 +86,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/user/getnextuserreferencenumber",method=RequestMethod.GET)
 	@ResponseBody
-	public Webfaceresponse LoadNextUserReference() {
+	public WSresponse LoadNextUserReference() {
 		
 		String userrefnumber=userservice.LoadNextUserReference();
 		
@@ -103,7 +103,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/role/fetchall",method=RequestMethod.GET)
 	@ResponseBody
-	public Webfaceresponse fetchAllRolesInformation() {
+	public WSresponse fetchAllRolesInformation() {
 		List<Role> roleslist=roleservice.fetchRolesInformation();
 		
 		Map<String,Object> response=new HashMap<String,Object>();
@@ -120,7 +120,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/role/rights",method=RequestMethod.GET)
 	@ResponseBody
-	public Webfaceresponse fetchRolesRightsInformation(@RequestParam(name = "roleid") int roleid) {
+	public WSresponse fetchRolesRightsInformation(@RequestParam(name = "roleid") int roleid) {
 		List<RoleRightsDetails> rolerightslist=new ArrayList<RoleRightsDetails>();
 		
 		
@@ -140,7 +140,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/role/rightschange",method=RequestMethod.POST)
 	@ResponseBody
-	public Webfaceresponse ChangeAccessForModule(@RequestBody RoleRightsDetails rolerights) {
+	public WSresponse ChangeAccessForModule(@RequestBody RoleRightsDetails rolerights) {
 		int updatecount=roleservice.ChangeAccessForModule(rolerights);
 
 		webfaceresponse.setCode("100");
@@ -153,7 +153,7 @@ public class SettingsController {
 	
 	@RequestMapping(value="/role/store",method=RequestMethod.POST)
 	@ResponseBody
-	public Webfaceresponse StoreRolesInformation(@RequestBody Role role) {
+	public WSresponse StoreRolesInformation(@RequestBody Role role) {
 		System.out.println("Reached StoreRolesInformation------------------------->");
 		
 		

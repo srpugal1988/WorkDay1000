@@ -57,13 +57,13 @@ public class BusinessApiController {
 	    	
 			
 			if(status) {
-		    	wsresponse.setCode(100);
+		    	wsresponse.setCode("100");
 		    	wsresponse.setPocket(null);
 		    	wsresponse.setMessage("Login successfully");
 		    	return new ResponseEntity<>(wsresponse, HttpStatus.CREATED);
 			}
 			else {
-				wsresponse.setCode(99);
+				wsresponse.setCode("99");
 		    	wsresponse.setPocket(null);
 		    	wsresponse.setMessage("Invalid username or password");
 		    	return new ResponseEntity<>(wsresponse, HttpStatus.UNAUTHORIZED);
@@ -74,7 +74,7 @@ public class BusinessApiController {
 	    } catch (Exception e) {
 	    	e.printStackTrace();
 	    	
-	    	wsresponse.setCode(66);
+	    	wsresponse.setCode("66");
 	    	wsresponse.setPocket(null);
 	    	wsresponse.setMessage(e.getMessage());
 	      return new ResponseEntity<>(wsresponse, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -89,7 +89,7 @@ public class BusinessApiController {
 	    	
 	    	businessApiService.createBusiness(business);
 	    	
-	    	wsresponse.setCode(100);
+	    	wsresponse.setCode("100");
 	    	wsresponse.setPocket(null);
 	    	wsresponse.setMessage("Business was created successfully");
 	    	return new ResponseEntity<>(wsresponse, HttpStatus.CREATED);
@@ -99,7 +99,7 @@ public class BusinessApiController {
 	    } catch (Exception e) {
 	    	e.printStackTrace();
 	    	
-	    	wsresponse.setCode(66);
+	    	wsresponse.setCode("66");
 	    	wsresponse.setPocket(null);
 	    	wsresponse.setMessage(e.getMessage());
 	      return new ResponseEntity<>(wsresponse, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -119,7 +119,7 @@ public class BusinessApiController {
 	          return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	      }
          */
-	      wsresponse.setCode(100);
+	      wsresponse.setCode("100");
 	      wsresponse.setPocket(businesslist);
 	      wsresponse.setMessage("Business was fetched successfully");
 	      return new ResponseEntity<>(wsresponse, HttpStatus.OK);
@@ -127,7 +127,7 @@ public class BusinessApiController {
 	    } catch (Exception e) {
 	    	e.printStackTrace();
 	    	
-	    	wsresponse.setCode(66);
+	    	wsresponse.setCode("66");
 	    	wsresponse.setPocket(null);
 	    	wsresponse.setMessage(e.getMessage());
 	      return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -151,7 +151,7 @@ public class BusinessApiController {
 	    	
 	    	business=businessApiService.getBusinessById(id);
 	    			
-	    	 wsresponse.setCode(100);
+	    	 wsresponse.setCode("100");
 		     wsresponse.setPocket(business);
 		     wsresponse.setMessage("Business was fetched successfully");
 		     return new ResponseEntity<>(wsresponse, HttpStatus.OK);
@@ -160,7 +160,7 @@ public class BusinessApiController {
 			// TODO: handle exception
 			e.printStackTrace();
 			
-	    	wsresponse.setCode(66);
+	    	wsresponse.setCode("66");
 	    	wsresponse.setPocket(null);
 	    	wsresponse.setMessage(e.getMessage());
 	    	
@@ -187,7 +187,7 @@ public class BusinessApiController {
 			businessApiService.updateBusiness(_business);
 			
 			
-			wsresponse.setCode(100);
+			wsresponse.setCode("100");
 			wsresponse.setPocket(business);
 			wsresponse.setMessage("Business was updated successfully");
 			return new ResponseEntity<>(wsresponse, HttpStatus.OK);
@@ -195,7 +195,7 @@ public class BusinessApiController {
 		} catch (Exception e) {
 			e.printStackTrace();
 			
-			wsresponse.setCode(66);
+			wsresponse.setCode("66");
 			wsresponse.setPocket(null);
 			wsresponse.setMessage(e.getMessage());
 			
@@ -213,20 +213,20 @@ public class BusinessApiController {
 	         result = businessApiService.deleteBusiness(id);
 	      
 	      if (result == 0) {
-	    	     wsresponse.setCode(100);
+	    	     wsresponse.setCode("100");
 			     wsresponse.setPocket(result);
 			     wsresponse.setMessage("Cannot find Business with id=" + id);
 	             return new ResponseEntity<>(wsresponse,HttpStatus.OK);
 	      }
 	      
-	         wsresponse.setCode(100);
+	         wsresponse.setCode("100");
 		     wsresponse.setPocket(result);
 		     wsresponse.setMessage("Business was deleted successfully");
 	         return new ResponseEntity<>(wsresponse, HttpStatus.OK);
 	         
 	    } catch (Exception e) {
 	    	e.printStackTrace();
-	    	 wsresponse.setCode(66);
+	    	 wsresponse.setCode("66");
 			 wsresponse.setPocket(result);
 			 wsresponse.setMessage(e.getMessage());
 		     return new ResponseEntity<>(wsresponse, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -242,7 +242,7 @@ public class BusinessApiController {
 	    	
 	    	numRows=businessApiService.deleteAllBusiness();
 	    	
-	    	 wsresponse.setCode(100);
+	    	 wsresponse.setCode("100");
 			 wsresponse.setPocket(null);
 			 wsresponse.setMessage("Deleted " + numRows + " Business(s) successfully.");
 			 
@@ -250,7 +250,7 @@ public class BusinessApiController {
 	    } catch (Exception e) {
 	    	 e.printStackTrace();
 	    	
-	    	 wsresponse.setCode(66);
+	    	 wsresponse.setCode("66");
 			 wsresponse.setPocket(null);
 			 wsresponse.setMessage(e.getMessage());
 		     return new ResponseEntity<>(wsresponse, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -267,14 +267,14 @@ public class BusinessApiController {
 	    	
 	    	businesslist=businessApiService.searchByBusinessName(businessname);
 	    	
-	    	 wsresponse.setCode(100);
+	    	 wsresponse.setCode("100");
 			 wsresponse.setPocket(businesslist);
 			 wsresponse.setMessage("Business was searched successfully");
 	      return new ResponseEntity<>(wsresponse, HttpStatus.OK);
 	      
 	    } catch (Exception e) {
 	    	 e.printStackTrace();
-		   	 wsresponse.setCode(66);
+		   	 wsresponse.setCode("66");
 			 wsresponse.setPocket(null);
 			 wsresponse.setMessage(e.getMessage());
 		 

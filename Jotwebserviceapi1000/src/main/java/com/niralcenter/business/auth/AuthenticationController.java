@@ -3,6 +3,8 @@ package com.niralcenter.business.auth;
 
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,10 +27,10 @@ import com.niralcenter.business.common.ClientDefs;
 import com.niralcenter.business.common.LoginInfo;
 import com.niralcenter.business.common.ModuleDefs;
 import com.niralcenter.business.common.ServerDefs;
-import com.niralcenter.business.common.Webfaceresponse;
 import com.niralcenter.business.menu.MenubarService;
 import com.niralcenter.business.model.Displayinfo;
 import com.niralcenter.business.model.User;
+import com.niralcenter.business.model.WSresponse;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -51,7 +53,7 @@ public class AuthenticationController {
 	MenubarService menubarService;
 
 	@Autowired
-	Webfaceresponse webfaceresponse;
+	WSresponse webfaceresponse;
 	
 	@Autowired
 	Displayinfo displayinfo;
@@ -59,11 +61,11 @@ public class AuthenticationController {
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	@ResponseBody
-	public Webfaceresponse proceedLoginCheck(HttpSession httpSession,@RequestBody User user1) {
+	public WSresponse proceedLoginCheck(HttpSession httpSession,@RequestBody User user1) {
 
 		//Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		//String currentPrincipalName = authentication.getName();
-		
+		Map<String,Object> responseMap=new HashMap<String,Object>();
 		
 		String username=user1.getUsername();
 		String password=user1.getPassword();
@@ -88,10 +90,15 @@ public class AuthenticationController {
 			
 			loginservice.UserLogForLogin(user);
 
-			LoginInfo.USERNAME=user.getUsername();
-			LoginInfo.ROLENAME=user.getRolename();
+			
 			LoginInfo.user=user;
 			
+			
+			displayinfo.setClient(ServerDefs.CLIENT);
+			displayinfo.setVersion(ServerDefs.VERSION);
+			displayinfo.setDisplayname(user.getFullname());
+			displayinfo.setRolename(user.getRolename());
+
 			
 			httpSession.setAttribute(ServerDefs.SESSION_USER_LABEL, user);
 			
@@ -99,12 +106,14 @@ public class AuthenticationController {
 			LoginInfo.USERS_SESSIONS.put(httpSession.getId(),user);
 			
 			
+			responseMap.put("UserInfo",user);
+			responseMap.put("DisplayInfo",displayinfo);
+			
+			
 			webfaceresponse.setCode("100");
 			webfaceresponse.setMessage("LoggedIn Successfully");
-			webfaceresponse.setPocket(user);
+			webfaceresponse.setPocket(responseMap);
 		} else {
-			LoginInfo.USERNAME="";
-			LoginInfo.ROLENAME="";
 			LoginInfo.user=null;
 			logger.info("USER:(" + user.getUsername() + ") LOGGED IN FAILURE");
 			webfaceresponse.setCode("99");
@@ -138,8 +147,6 @@ public class AuthenticationController {
 			httpSession.invalidate();
 			loginservice.UserLogForLogout(user);
 			
-			LoginInfo.USERNAME="";
-			LoginInfo.ROLENAME="";
 			LoginInfo.user=null;
 			
 			LoginInfo.USERS_SESSIONS.remove(globalId);
@@ -157,7 +164,7 @@ public class AuthenticationController {
 	
 	@RequestMapping(value = "/checkLoginUser", method = RequestMethod.GET)
 	@ResponseBody
-	public Webfaceresponse checkForPageAccess(HttpSession httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse,@RequestParam("moduleindex") String moduleindex,@RequestParam("id") String globalId) throws IOException {
+	public WSresponse checkForPageAccess(HttpSession httpSession,HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse,@RequestParam("moduleindex") String moduleindex,@RequestParam("id") String globalId) throws IOException {
 
 		User user=LoginInfo.USERS_SESSIONS.get(globalId);
 		

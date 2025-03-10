@@ -28,6 +28,8 @@ public class ModuleDefs {
 	public static final String  SETTINGS= "settings";//3000
 	public static final String  SETTINGS_USER="settingsUserPage";//3100
 	public static final String  SETTINGS_ROLE="settingsRolePage";//3200
+	public static final String  SETTINGS_BROWSER="settingsBrowserPage";//3300
+	public static final String  SETTINGS_BROWSER_SESSIONS="settingsBrowserSessionPage";//3310
 
 	
 	//20000

@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niralcenter.business.common.ClientDefs;
@@ -27,15 +26,15 @@ import com.niralcenter.business.model.Menu;
 import com.niralcenter.business.model.User;
 import com.niralcenter.business.model.WSresponse;
 
+
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 
 
 
-
-@Controller
 //@CrossOrigin(origins = "http://localhost:4200")
+@Controller
 public class MenubarController {
 
 	private static final Logger logger = LogManager.getLogger(MenubarController.class);
@@ -58,7 +57,7 @@ public class MenubarController {
 		/*String URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.LOGIN;
 		httpServletResponse.sendRedirect(URL);
 		*/
-		wsresponse.setCode(100);
+		wsresponse.setCode("100");
 		wsresponse.setMessage("Jobwebserviceapi1000 running sucessfully");
 		wsresponse.setPocket("");
 		
@@ -122,6 +121,12 @@ public class MenubarController {
 			break;
 		case 3200:
 			 URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.SETTINGS_ROLE;
+			 break;
+		case 3300:
+			 URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.SETTINGS_BROWSER;
+			 break;
+		case 3310:
+			 URL=ClientDefs.CLIENT_URL+"/"+ModuleDefs.SETTINGS_BROWSER_SESSIONS;
 			break;
 
 			
@@ -157,7 +162,7 @@ public class MenubarController {
 		
 		menulist=menubarService.loadMenuByrole(roleid);
 		
-		wsresponse.setCode(100);
+		wsresponse.setCode("100");
 	    wsresponse.setPocket(menulist);
 	    wsresponse.setMessage("Menu was fetched successfully");
 	      

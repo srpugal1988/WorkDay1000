@@ -2,18 +2,19 @@ package com.niralcenter.business.model;
 
 import org.springframework.stereotype.Component;
 
+
 @Component
 public class WSresponse {
 
-	int code;
+	String code;
 	String message;
 	Object pocket;
 	
 	
-	public int getCode() {
+	public String getCode() {
 		return code;
 	}
-	public void setCode(int code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 	public String getMessage() {
